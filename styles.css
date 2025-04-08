@@ -71,5 +71,7 @@ img {
 
 th {
     text-align:left;
-    width:100px
+    width:100px;
+    background-color:gray;
+    color:white;
 }
