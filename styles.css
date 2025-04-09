@@ -1,38 +1,59 @@
+/* changed font of all text to sansserif because it's all the same anyways */
 * {
     font-family:sans-serif;
 }
 
-body{
+/* left border w/ margin to make the line seen on the left side of the 
+screenshot, couldn't make it extend all the way down though */
+body {
     border-left:1px solid rgb(203, 203, 203);
     background-color: rgb(240, 240, 240);
+    margin-left:40px;
+
+/* line-height to make the two lines closer together, couldn't think of
+anything else; also padding top/bottom to make banner match the size */
 }
 #header{
     text-align:center;
-    margin-top:1px;
-    padding-top:1px;
-    margin-bottom:1px;
-    padding-bottom:1px;
+    padding-top:5px;
+    padding-bottom:5px;
     line-height:10px;
     background-color:rgb(49, 115, 238);
     color:white;
+    font-size:20px;
 }
 
 #header > p {
     font-style:italic;
-    font-weight:bold;
-    font-size:12px;
+    font-size:16px;
+    line-height:0;
+    margin-bottom:20px;
 }
 
+/* page content is like 15px right of the border */
 #main-content{
     padding-left:15px
 }
 
+/* text-transform h2 and h3 to uppercase so it matches */
 #main-content > h2 {
     text-transform:uppercase;
 }
 
+/* the amazing facts text needs to be closer than it was originally to the
+above line, only line-height ended up working for this */
 #main-content > h3 {
     text-transform:uppercase;
+    line-height:0;
+}
+
+/* matching line spacing of screenshot */
+ul{
+    margin-top:40px;
+}
+
+h4 p {
+    margin-bottom:10px;
 }
 
 .important {
@@ -45,33 +66,65 @@ li {
 }
 
 h6 { 
-    font-size:12px;
+    font-size:15px;
+    margin-top:45px;
+    line-height:0
 }
 
+#ext-links{
+    line-height:0;
+    margin-bottom:50px;
+}
+
+/* small space between lines, same method as in body rule to make border */
 #quiz-section{
     background-color:rgb(228, 246, 252);
     padding-left:15px;
     padding-bottom:20px;
     margin:5px;
-    border:1px solid rgb(223, 223, 223)
+    border:1px solid rgb(211, 211, 211)
 }
 
 #quiz {
     text-transform:uppercase;
 }
 
+form {
+    line-height:25px;
+}
+
+/* size and placement were tricky to get right */
 img {
     display:block;
     float:right;
-    width:10%;
-    margin:30px;
-    margin-right:50px;
+    width:8%;
+    margin:35px;
+    margin-right:60px;
     border: 3px solid rgb(141, 0, 222);
 }
 
+#species-table > h2 {
+    margin-top:30px;
+    line-height:0;
+}
+
+/* table text is left-aligned w/ some padding */
 th {
     text-align:left;
-    width:100px;
-    background-color:gray;
+    background-color:rgb(149, 149, 149);
     color:white;
+    padding:10px;
+}
+
+td {
+    padding:7px;
+}
+
+#footer {
+    background-color:rgb(213, 213, 213);
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:5px;
+    font-size:15px;
+    text-align:center;
 }
